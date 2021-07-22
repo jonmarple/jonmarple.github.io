@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Jon's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/code-solid.svg">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/ab21b6b2b9.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-image: url('images/fabric.png');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 15%; margin-bottom: 5%;">
+            <div class="two columns pad"></div>
+            <div class="eight columns pad card">
+                <h2 style="text-align: center;">Projects</h2>
+                <a href="mailto:elpramnoj@gmail.com">
+                    <i class="fas fa-at fa-3x pink halfpad left" title="Email"></i>
+                </a>
+                <a href="https://linkedin.com/in/jonathan-marple-91974714a" target="_blank">
+                    <i class="fab fa-linkedin-in fa-3x yellow halfpad left" title="LinkedIn"></i>
+                </a>
+                <a href="https://github.com/jonmarple" target="_blank">
+                    <i class="fab fa-github-alt fa-3x blue halfpad left" title="Github"></i>
+                </a>
+                <a href="index.html">
+                    <i class="fas fa-arrow-circle-left fa-3x orange halfpad right" title="Home"></i>
+                </a>
+            </div>
+            <div class="two columns pad"></div>
+        </div>
+
+        <div class="row" style="margin-bottom: 5%;">
+            <div class="three columns pad"></div>
+            <div class="six columns pad card">
+                <i class="fas fa-hashtag fa-3x blue halfpad right" title="C#"></i>
+                <h5>Doot</h5>
+                <p>
+                    <b>Video Game</b> <br>
+                    <a href="https://loltoast.itch.io/doot">Doot</a> is a roguelite dungeon crawler made for the
+                    <a href="https://itch.io/jam/scream-jam-2020" target="_blank">SCREAM JAM 2020</a> competition, in
+                    which it ranked highest in the <a href="https://itch.io/jam/scream-jam-2020/results/sound-design"
+                        target="_blank">sound design</a> section. Paying attention to the audio is crucial for success
+                    in this game, as it serves as the main indicator for enemies and game objectives!
+                </p>
+                <img id="myImg" src="https://img.itch.zone/aW1hZ2UvNzk2ODA1LzQ0NjA5MDcucG5n/original/2QfxKi.png">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="three columns pad"></div>
+        </div>
+
+        <div class="row" style="margin-bottom: 5%;">
+            <div class="three columns pad"></div>
+            <div class="six columns pad card">
+                <i class="fab fa-cuttlefish fa-3x pink halfpad right"
+                    title="This is supposed to be for C but apparently it's for something called Cuttlefish?"></i>
+                <h5>1D Pong</h5>
+                <p>
+                    <b>TSU CS484: Embedded Systems - Final </b> <br>
+                    The majority of my embedded systems course was focused on Arduino Uno development. We wrote
+                    nearly everything in assembly, although C was allowed on the larger projects. For our final project,
+                    my partner and I implemented a 1D version of Pong. This consisted of 2 buttons for paddle controls,
+                    10 LEDs to display the ball, a buzzer to indicate hits and misses, and a potentiometer to change the
+                    speed of the ball!
+                </p>
+                <a href="assets/main.c" target="_blank">
+                    <i class="fas fa-file-code fa-3x green halfpad left" title="Code"></i>
+                </a>
+                <a href="assets/1D Pong.mp4" target="_blank">
+                    <i class="fas fa-play fa-3x blue halfpad left" title="Demonstration"></i>
+                </a>
+            </div>
+            <div class="three columns pad"></div>
+        </div>
+
+        <div class="row" style="margin-bottom: 5%;">
+            <div class="three columns pad"></div>
+            <div class="six columns pad card">
+                <i class="fab fa-python fa-3x yellow halfpad right" title="Python"></i>
+                <h5>Intron/Exon Alignment</h5>
+                <p>
+                    <b>TSU CS325: Bioninformatics - Final </b> <br>
+                    The bioinformatics course I took was a co-major program consisting of computer science and biology
+                    students. For my team's final project, we developed a python program that would attempt to align
+                    introns and exons using dynamic programming. It would accept numerous
+                    <a href="assets/9_Elephant_animal_other_mammal.txt" target="_blank">large input files</a>, process
+                    them for nearly 30 minutes, and return <a href="assets/Bio Output.txt" target="_blank">detailed
+                        output</a> regarding the scores of the alignments.
+                </p>
+                <a href="assets/bio.py" target="_blank">
+                    <i class="fas fa-file-code fa-3x green halfpad left" title="Code"></i>
+                </a>
+            </div>
+            <div class="three columns pad"></div>
+        </div>
+
+        <div class="row" style="margin-bottom: 5%;">
+            <div class="three columns pad"></div>
+            <div class="six columns pad card">
+                <i class="fab fa-python fa-3x yellow halfpad right" title="Python"></i>
+                <h5>Grandma's Pi</h5>
+                <p>
+                    <b>Raspberry Pi TTS Calendar Scraper</b> <br>
+                    <b>Context:</b> My mother maintains a Google calendar for her mother's appointments. <br>
+                    <b>Problem:</b> My grandmother is constantly calling my mother to ask when her appointments are.
+                    <br>
+                    <b>Solution:</b> Rigging an original Raspberry Pi with a numpad and speakers to scrape a Google
+                    calendar,
+                    convert appointment information using <a href="https://gtts.readthedocs.io/en/latest/"
+                        target="_blank">Google's TTS</a>, and playing that information back with
+                    <a href="https://www.raspberrypi.org/documentation/raspbian/applications/omxplayer.md"
+                        target="_blank">OMXPlayer</a>. <br> <br>
+                    This allowed my grandmother to manually receive appointment reminders on her own! <br>
+                    (until the Raspberry Pi died...)
+                </p>
+                <a href="assets/readcalendar.py" target="_blank">
+                    <i class="fas fa-file-code fa-3x green halfpad left" title="Code"></i>
+                </a>
+            </div>
+            <div class="three columns pad"></div>
+        </div>
+
+        <div class="row" style="margin-bottom: 5%;">
+            <div class="three columns pad"></div>
+            <div class="six columns pad card">
+                <i class="fab fa-rust fa-3x orange halfpad right" title="Rust"></i>
+                <h5>MFM</h5>
+                <p>
+                    <b>Media Server w/ Management & Data Scraping Scripts</b> <br>
+                    During my Linux phase in college, I spent a lot of time investigating automation ideas. I set up an
+                    <a href="https://ubuntu.com/download/server" target="_blank">Ubuntu Server</a> instance to serve up
+                    media files for my Raspberry Pi <a href="https://kodi.tv/" target="_blank">Kodi</a> client. In order
+                    to provide all the metadata and images for the client to display media properly, I wrote a Rust
+                    script to scrape IMDb's site using their <a href="https://developer.imdb.com/documentation"
+                        target="_blank">API</a>.
+                </p>
+            </div>
+            <div class="three columns pad"></div>
+        </div>
+
+        <div class="row" style="margin-bottom: 5%;">
+            <div class="three columns pad"></div>
+            <div class="six columns pad card">
+                <i class="fab fa-rust fa-3x orange halfpad right" title="Rust"></i>
+                <h5>PiBlock</h5>
+                <p>
+                    <b>D&D Character Sheet CLI</b> <br>
+                    The idea here was to design an interactive character sheet controller for D&D characters. It would
+                    be run through a terminal--ideally on a Raspberry Pi so I could have a highly portable solution. I
+                    made it as far as parsing/updating JSON character files and presenting that information through text
+                    (which was actually quite good looking, as I used <a href="https://crates.io/crates/colored"
+                        target="_blank">Colored</a> to color the output), but I never got around to finishing it and
+                    implementing the user commands.
+                </p>
+                <a href="assets/Pi Block Output.txt" target="_blank">
+                    <i class="fas fa-file fa-3x green halfpad left" title="Output"></i>
+                </a>
+            </div>
+            <div class="three columns pad"></div>
+        </div>
+
+        <div class="row" style="margin-bottom: 5%;">
+            <div class="three columns pad"></div>
+            <div class="six columns pad card">
+                <i class="fab fa-python fa-3x yellow halfpad right" title="Python"></i>
+                <h5>PokeWeight</h5>
+                <p>
+                    <b>Reddit Bot</b> <br>
+                    One of my first programming projects (judge lightly) was a Reddit bot that would detect weights in
+                    comments and determine a combination of Pokemon that would be equivalent to that weight using a sort
+                    of binary search, within 5% accuracy. It would respond to the post with the list of Pokemon!
+                </p>
+                <a href="assets/PokeWeight.py" target="_blank">
+                    <i class="fas fa-file-code fa-3x green halfpad left" title="Code"></i>
+                </a>
+            </div>
+            <div class="three columns pad"></div>
+        </div>
+
+        <div class="row" style="margin-bottom: 10%;"></div>
+    </div>
+
+    <script src="js/imgModal.js"></script>
+    <script src="js/prism.js"></script>
+</body>
+
+</html>
